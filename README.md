@@ -17,12 +17,33 @@ Github template for new libraries
 
 This is template repository for new libraries
 
-## Important
+## Example
 
-Edit go.mod and rename to your package module
+```yaml
+name: Run tests and upload coverage
 
-## Commit rules
-Commit message should looks like
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize, edited]
+  push:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  test:
+    name: Run tests and collect coverage
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run tests and upload to coverage
+        uses: gouef/go-test-with-coverage-action@main
+        with:
+          go-version: 1.23.4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 ```
 
 ## Contributors
