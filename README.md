@@ -4,7 +4,7 @@
 Go test with coverage Github action
 
 [![GitHub stars](https://img.shields.io/github/stars/gouef/go-test-with-coverage-action?style=social)](https://github.com/gouef/go-test-with-coverage-action/stargazers)
-[![Go Report Card](https://goreportcard.com/badge/github.com/gouef/go-test-with-coverage-action)](https://goreportcard.com/report/github.com/gouef/go-test-with-coverage-action)
+![Usages](https://img.shields.io/endpoint?url=https://github-repo-usages.vercel.app/api/getAction.go?repository=gouef/go-test-with-coverage-action)
 
 ## Versions
 ![Stable Version](https://img.shields.io/github/v/release/gouef/go-test-with-coverage-action?label=Stable&labelColor=green)
