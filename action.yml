@@ -69,3 +69,4 @@ runs:
         name: ${{ github.workflow }}
         fail_ci_if_error: true
         verbose: true
+        slug: ${{ github.repository }}
