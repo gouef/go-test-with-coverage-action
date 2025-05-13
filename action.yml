@@ -36,7 +36,7 @@ runs:
       shell: bash
 
     - name: Run tests
-      run: go test -covermode=set ./... -coverprofile=coverage.txt
+      run: go test -covermode=set -coverpkg=./... -coverprofile=coverage.txt ./tests
       shell: bash
 
     - name: Debug info
